@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 // Transforma uma classe em uma entidade do BD
 //JPA = Java Persistence API
 @Entity
-@Table(name = "tb_cadastro")
+@Table(name = "tb_ninja")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -24,7 +24,7 @@ public class NinjaModel {
 
     // @ManyToOne - Vários ninjas para uma missão
     @ManyToOne
-    @JoinColumn(name = "missoes_id") // Foreign Key = Chave Estrangeira
-    private MissoesModel missoes;
+    @JoinColumn(name = "missao_id") // Foreign Key = Chave Estrangeira
+    private MissoesModel missao;
 
 }

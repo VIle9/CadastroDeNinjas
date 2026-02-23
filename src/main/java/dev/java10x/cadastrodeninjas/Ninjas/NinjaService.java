@@ -25,7 +25,7 @@ public class NinjaService {
 
     // Buscar por id
     public NinjaModel buscarPorId(Long id){
-        return repository.findById(id).orElseThrow(() ->new RuntimeException("Ninja não encontrado!"));
+        return repository.findById(id).orElseThrow(() -> new RuntimeException("Ninja não encontrado!"));
     }
 
     public void deletar(Long id){
